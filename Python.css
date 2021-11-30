@@ -1,4 +1,4 @@
-﻿*{
+*{
   margin: 0;
   padding: 0;
   outline: none;
@@ -170,6 +170,10 @@ table .checked {
     }
     .card {
        display: none;
+    }
+    .title{
+        margin-left: 28px;
+        margin-right: 10px;
     }
 }
 
@@ -392,7 +396,11 @@ margin-right: 30px;
 .js {width: 97%; background-color: #f44336;}
 .php {width: 98%; background-color: #808080;}
 
-@media(max-width: 800px){
+@media(max-width: 880px){
+   .info img{
+          width: 100px;
+          height: 100px;
+   }
     #tit{
         margin-left: 10%;
         margin-top: 20px;
@@ -405,13 +413,19 @@ margin-right: 30px;
     }
     #curr{
         height: 900px;
+        width: 500px;
+        padding: 0px 0px 0px 0px;
+       
     }
     #div1,#div2,#div3 {
         height: 50px;
-        padding: 10px;
-        margin-bottom: 5px;
+      padding: 5px;
+        margin-bottom: 2px;
         font-size: 13px;
        font-weight: bold;
+       width: 100%;
+        margin-left: 30px;
+        
     }
     #div1 span,#div2 span,#div3 span{
         display: block;
@@ -421,18 +435,28 @@ margin-right: 30px;
         width: 85%;
     }
     #ment{
-        margin-right: 20%;
+        margin-right: 10%;
         
+    }
+    #ment img{
+        height: 100px;
+        width: 100px;
     }
     #tea{
         font-size: 18px;
     }
     #Rev{
         padding: 3px 3px 3px 3px;
-        width: 70%;
-        margin-left:10px;
+        width: 85%;
+        margin-left:2px;
     }
-    
+    .nav1 a{
+        padding: 5px;
+     
+    }
+    .nav1{
+     margin-left: 10%;
+    }
 }
 
 footer{
