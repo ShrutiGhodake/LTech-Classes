@@ -163,7 +163,7 @@ table .checked {
 @media(max-width: 800px){
     table,td{
         font-size: 15px;
-        margin-left: 1%;
+        margin-left: -20px;
         padding: 5px;
         margin-bottom: 0px;
     }
