@@ -162,8 +162,9 @@ table .checked {
 
 @media(max-width: 800px){
     table,td{
+        width: 20%;
         font-size: 15px;
-        margin-left: -20px;
+        margin-left: -40px;
         padding: 5px;
         margin-bottom: 0px;
     }
