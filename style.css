@@ -447,96 +447,91 @@ nav .cancel-icon{
 
 
   
-        .container1{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 25px;
-            color: white;
-	    background: linear-gradient(90deg ,#52cfee,rgb(14, 2, 83));
-        }
-        
-        hr{
-            width: 80%;
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
-        h2{
-            font-size: 20px;
-        }
-        .contact-items{
-            display: flex;
-            margin: 30px auto;
-            flex-wrap: wrap;
-            align-items: center;
+.container1{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 25px;
+         color: white;
+	 background: linear-gradient(90deg ,#52cfee,rgb(14, 2, 83));
+}        
+hr{
+         width: 80%;
+         margin-bottom: 30px;
+         margin-top: 30px;
+}
+h2{
+         font-size: 20px;
+}
+.contact-items{
+        display: flex;
+        margin: 30px auto;
+        flex-wrap: wrap;
+        align-items: center;
 
-        }
-        .nikita,.avh,.shru{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 28%;
-            margin: 30px auto;
-            padding: 35px 15px;
-            border-radius: 15px;
-            text-align: center;
-            min-width: 250px;
-            background-color: white;
-	  color: #002366;
-        }
-        .nikita:hover,.avh:hover,.shru:hover{
-            transform: scale(1.1);
-        }
-        .nikita{
-            height: 250px;
-            box-shadow: 0 15px 15px #002366;
-            border: 1px solid #002366;
-        }
-        .avh{
-            height: 250px;
-            box-shadow: 0 15px 15px #002366;
-            border: 1px solid #002366;
-        }
-        .shru{
-            height: 250px;
-            box-shadow: 0 15px 15px #002366;
-            border: 1px solid #002366;
-        }
-        .nikita img,.avh img,.shru img{
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            box-shadow: 0 5px 5px #000;
-            margin-top:3px;
-            margin-bottom: 4px;
-        }
-        p{
-            font-size: 15px;
-        }
-        button{
-            padding: 8px 16px;
-            font-size: 17px;
-            border-radius: 25px;
-            border: none;
-            margin: 15px auto;
-            cursor: pointer;
-            color: #fff;
-        }
-        button:hover{
-            color: gray;
-        }
-        #cust-care{
-            background: #002366;
-            box-shadow: 0 0 5px #002366;
-        }
-        #write{
-            background: #002366;
-            box-shadow: 0 0 5px #002366;
-        }
-        #sales{
-            background: #002366;
-            box-shadow: 0 0 5px #002366;
-        }
+}
+.nikita,.avh,.shru{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 28%;
+        margin: 30px auto;
+        padding: 35px 15px;
+        border-radius: 15px;
+        text-align: center;
+        min-width: 250px;
+        background-color: white;
+	color: #002366;
+}
+.nikita:hover,.avh:hover,.shru:hover{
+       transform: scale(1.1);
+}
+.nikita{
+       height: 250px;
+       box-shadow: 0 15px 15px #002366;
+       border: 1px solid #002366;
+}
+.avh{
+       height: 250px;
+       box-shadow: 0 15px 15px #002366;
+       border: 1px solid #002366;
+}
+.shru{
+       height: 250px;
+       box-shadow: 0 15px 15px #002366;
+       border: 1px solid #002366;
+}
+.nikita img,.avh img,.shru img{
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       box-shadow: 0 5px 5px #000;
+       margin-top:3px;
+       margin-bottom: 4px;
+}
+p{
+       font-size: 15px;
+}
+button{
+       padding: 8px 16px;
+       font-size: 17px;
+       border-radius: 25px;
+       border: none;
+       margin: 15px auto;
+       cursor: pointer;
+       color: #fff;
+}
+button:hover{
+      color: gray;
+}
+#cust-care{
+      background: #002366;
+      box-shadow: 0 0 5px #002366;
+}
+#write{
+      background: #002366;
+      box-shadow: 0 0 5px #002366;
+}
         
 footer{
 	position: fixed;
