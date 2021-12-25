@@ -1,4 +1,4 @@
-﻿
+
 *{
   margin: 0;
   padding: 0;
@@ -482,7 +482,7 @@ nav .cancel-icon{
             text-align: center;
             min-width: 250px;
             background-color: white;
-	    color: #002366;
+	  color: #002366;
         }
         .nikita:hover,.avh:hover,.shru:hover{
             transform: scale(1.1);
@@ -710,7 +710,7 @@ footer{
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
-		position: static;
+        position: static;
 	}
 
 	.footer-distributed .footer-center i{
