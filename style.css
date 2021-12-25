@@ -452,7 +452,8 @@ nav .cancel-icon{
             flex-direction: column;
             align-items: center;
             padding: 25px;
-            color: #002366;
+            color: white;
+	    background: linear-gradient(90deg ,#52cfee,rgb(14, 2, 83));
         }
         
         hr{
@@ -480,7 +481,8 @@ nav .cancel-icon{
             border-radius: 15px;
             text-align: center;
             min-width: 250px;
-            
+            background-color: white;
+	    color: #002366;
         }
         .nikita:hover,.avh:hover,.shru:hover{
             transform: scale(1.1);
