@@ -1,242 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
-
 *{
-  font-family: 'Nunito', sans-serif;
-  margin: 0; padding: 1px;
-  box-sizing: border-box;
-  outline: none; 
-  border:none;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-html{
-  font-size: 62.5%;
-  overflow-x: hidden;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
 }
 nav{
-  background: #F8F8F8;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  padding: 0 100px;
-}
-nav .logo{
-  color: #002366;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -1px;
-}
-nav .nav-items{
-  padding: 0 0 0 40px;
-  float: right;
-  margin-right: 10px;
-}
-nav .nav-items li{
-   display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-nav .nav-items li a{
-  color: #002366;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 7px 13px;
-}
-nav .nav-items li a:hover{
-  color: #fff;
-  background: #002366;
-}
-
-nav .menu-icon,
-nav .cancel-icon{
-  width: 40px;
-  text-align: center;
-  margin: 0 50px;
-  font-size: 18px;
-  color: #002366;
-  cursor: pointer;
-  display: none;
-}
-nav .menu-icon span,
-nav .cancel-icon{
-  display: none;
-}
-@media (max-width: 1245px) {
-  nav{
-    padding: 0 50px;
-  }
-}
-@media (max-width: 1140px){
-  nav{
-    padding: 0px;
+    background: #F8F8F8;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 100px;
   }
   nav .logo{
-    flex: 2;
-    text-align: center;
+    color: #002366;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
   }
   nav .nav-items{
-    position: fixed;
-    z-index: 99;
-    top: 70px;
-    width: 100%;
-    left: -100%;
-    height: 100%;
-    padding: 10px 50px 0 50px;
-    text-align: center;
-    background: #fff;
-    display: inline-block;
-    transition: left 0.3s ease;
-  }
-  nav .nav-items.active{
-    left: 0px;
+    padding: 0 0 0 40px;
+    float: right;
+    margin-right: 10px;
   }
   nav .nav-items li{
-    line-height: 40px;
-    margin: 30px 0;
+     display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
   }
   nav .nav-items li a{
-    font-size: 20px;
     color: #002366;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 13px;
   }
   nav .nav-items li a:hover{
-    background: #002366;
     color: #fff;
-  }
-  nav .menu-icon{
-    display: block;
-  }
-  nav .menu-icon span{
-    display: block;
-  }
-  nav .menu-icon span.hide{
-    display: none;
-  }
-  nav .cancel-icon.show{
-    display: block;
-  }
-}
-
-@media (max-width: 980px){
-  nav .menu-icon,
-  nav .cancel-icon{
-    margin: 0 20px;
+    background: #002366;
   }
   
-}
-@media (max-width: 350px){
   nav .menu-icon,
   nav .cancel-icon{
-    margin: 0 10px;
-    font-size: 16px;
+    width: 40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: #002366;
+    cursor: pointer;
+    display: none;
   }
-}
-
-body{
-  padding:3rem 7%;
-  background: linear-gradient(90deg ,#52cfee,rgb(14, 2, 83)); 
-}
-
-
+  nav .menu-icon span,
+  nav .cancel-icon{
+    display: none;
+  }
+  @media (max-width: 1245px) {
+    nav{
+      padding: 0 50px;
+    }
+  }
+  @media (max-width: 1140px){
+    nav{
+      padding: 0px;
+    }
+    nav .logo{
+      flex: 2;
+      text-align: center;
+    }
+    nav .nav-items{
+      position: fixed;
+      z-index: 99;
+      top: 70px;
+      width: 100%;
+      left: -100%;
+      height: 100%;
+      padding: 10px 50px 0 50px;
+      text-align: center;
+      background: #fff;
+      display: inline-block;
+      transition: left 0.3s ease;
+    }
+    nav .nav-items.active{
+      left: 0px;
+    }
+    nav .nav-items li{
+      line-height: 40px;
+      margin: 30px 0;
+    }
+    nav .nav-items li a{
+      font-size: 20px;
+      color: #002366;
+    }
+    nav .nav-items li a:hover{
+      background: #002366;
+      color: #fff;
+    }
+    nav .menu-icon{
+      display: block;
+    }
+    nav .menu-icon span{
+      display: block;
+    }
+    nav .menu-icon span.hide{
+      display: none;
+    }
+    nav .cancel-icon.show{
+      display: block;
+    }
+  }
+  
+  @media (max-width: 980px){
+    nav .menu-icon,
+    nav .cancel-icon{
+      margin: 0 20px;
+    }
+    
+  }
+  @media (max-width: 350px){
+    nav .menu-icon,
+    nav .cancel-icon{
+      margin: 0 10px;
+      font-size: 16px;
+    }
+  }
 .heading{
-  color:transparent;
-  background:white;
-  -webkit-background-clip: text;
-  background-clip: text;
-  padding:0 1rem;
-  padding-top: 2rem;
-  text-align: center;
-  font-size: 4rem;
-  text-transform: uppercase;
+    color: #002366;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.heading::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: .2rem;
+    width: 5%;
+    border-radius: 5rem;
+    background: #333;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+.container .main-video{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container .main-video iframe{
+    width: 100%;
+    border-radius: 5px;
+}
+.container .main-video .title{
+    color: #333;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container .video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+.container .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+.container .video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+}
+.container .video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+.container .video-list .vid iframe{
+    width: 100px;
+    border-radius: 5px;
+    max-height: 100px;
+}
+.container .video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.container .video-list .vid:hover{
+    background: #eee;
+}
+.container .video-list .vid.active{
+    background: #52cfee;
+}
+.container .video-list .vid.active .title{
+    background: rgb(219, 204, 204);
+}
+.container .video-list .vid .title{
+    color: #333;
+    font-size: 17px;
 }
 
-.btn{
-  display: inline-block;
-  margin-top: 1rem;
-  padding:.8rem 3rem;
-  border-radius: .5rem;
-  background:rgb(9, 181, 204);
-  color:#fff;
-  cursor: pointer;
-  font-size: 1.7rem;
+@media (max-width:991px){
+    .container{
+        grid-template-columns: 2fr 1fr;
+        padding: 10px;
+    }
 }
-
-.btn:hover{
-  background:rgb(7, 5, 139);
+@media (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
 }
-
-
-.course{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5rem;
-}
-
-.course .box{
-  flex:1 1 30rem;
-  border-radius: .5rem;
-  border:1px solid black;
-  padding:2rem;
-  background-color: #fff;
-  position: relative;
- 
-
-}
-
-.course .box img{
-  height:20rem;
-  width:100%;
-}
-
-.course .box .amount{
-  position: absolute;
-  top:1rem; left:1rem;
-  font-size: 2rem;
-  padding:.5rem 1rem;
-  background:rgb(7, 5, 139);
-  color:#fff;
-  border-radius: .5rem;
-}
-
-.course .box .stars i{
-  color:blue;
-  font-size: 1.5rem;
-  padding:1rem 0;
-}
-
-.course .box h3{
-  font-size: 2.5rem;
-}
-
-.course .box p{
-  color:#666;
-  font-size: 1.5rem;
-  padding:.5rem 0;
-}
-
-.course .icons{
-  display: flex;
-  justify-content: space-between;
-  border-top: .1rem solid rgba(0,0,0,.1);
-  margin-top: 1rem;
-  padding:.5rem;
-  padding-top: 1rem;
-}
-
-.course .icons p{
-  color:#666;
-  font-size: 1.3rem;
-}
-
-.course .icons p i{
-  padding-right: .4rem;
-  color:rgb(26, 10, 117);
-}
-
 footer{
 	position: fixed;
 	bottom: 0;
@@ -393,8 +380,6 @@ footer{
 	margin-bottom: 5px;
 }
 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
 .logo1{
     font-size:50px;
     color: #002366;
@@ -409,11 +394,11 @@ footer{
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
-        position: static;
+		position: static;
 	}
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
 
-}  
+}
