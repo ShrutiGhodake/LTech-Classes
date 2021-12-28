@@ -205,9 +205,6 @@ nav{
 .container .video-list .vid.active{
     background: #52cfee;
 }
-.container .video-list .vid.active .title{
-    background: rgb(219, 204, 204);
-}
 .container .video-list .vid .title{
     color: #333;
     font-size: 17px;
