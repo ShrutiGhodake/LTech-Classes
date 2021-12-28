@@ -31,10 +31,10 @@
       </nav><br><br>
 <div class="container">
         <div class="text">Contact us Form</div>
-        <form action="" onsubmit="alert('Thank you')">
+        <form action="" onsubmit="ShowAlert()">
            <div class="form-row">
               <div class="input-data">
-                 <input type="text" required>
+                 <input type="text" id="fname" required>
                  <div class="underline"></div>
                  <label for="">First Name</label>
               </div>
@@ -46,7 +46,7 @@
            </div>
            <div class="form-row">
               <div class="input-data">
-                 <input type="text" required>
+                 <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                  <div class="underline"></div>
                  <label for="">Email Address</label>
               </div>
@@ -71,7 +71,7 @@
               </div>
            </div>
         </form>
-     </div><br><br>
+     </div><br>
     <footer class="footer-distributed">
 
 			<div class="footer-left">
@@ -160,6 +160,10 @@
            form.classList.add("active");
            cancelBtn.classList.add("show");
          }
+        function ShowAlert(){
+		var fnme=document.getElementById("fname").value;
+		alert('Thank You '+fnme+' !');
+	}
       </script>
    </body>
 </html>
