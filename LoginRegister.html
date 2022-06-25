@@ -1,19 +1,18 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="LoginRegisterStyle.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <!-- font awesome cdn link  -->
+    <title>course</title>
+
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="LoginRegister.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -25,12 +24,12 @@
          <div class="logo">
             LTech Classes
          </div>
-          <div class="nav-items">
-            <li><a class="active" href="index.html">Home</a></li>
-             <li><a class="active" href="Courses.html">Courses</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a class="active" href="LoginRegister.html">Login</a></li>
+         <div class="nav-items">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a class="active" href="Courses.html">Courses</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a class="active" href="LoginRegister.html">Login</a></li>
          </div>
          <div class="cancel-icon">
             <span class="fas fa-times"></span>
@@ -40,11 +39,21 @@
 <!-- course section  -->
 <section class="login">
     <script>
-        $(document).ready(function(){
-          $("form").submit(function(){
-            alert("Welcome to Ltech Classes!!");
-          });
-        });
+	function callMe(){
+		var us=documnet.getElementById("uname").value;
+		return us;
+	}
+	function callUs(){
+		var me=callMe();
+		var un=document.getElementById("email").value;
+		if(me==un)
+		{
+			alert("Welcome to Ltech Classes "+un);
+		}
+		else{
+			alert("Invalid username");
+		}
+	}
         </script>
       </head>
       <body>
@@ -55,18 +64,18 @@
                       <button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
                   </div>
                   <div class="social-icons">
-                      <a href="https://www.facebook.com/"><img src="fb2.png"></a>
-                      <a href="https://www.instagram.com/"><img src="insta2.png"></a>
-                      <a href="https://twitter.com/"><img src="tt2.png"></a>
+                      <img src="fb2.png">
+                      <img src="insta2.png">
+                      <img src="tt2.png">
                   </div>
                   
                   <!-- Login Form -->
-                  <form id="login" class="input-group" action="Enrolled.html">
+                  <form id="login" class="input-group" action="LoginController"  onsubmit="callMe()">
                       <div class="inp">
-                          <img src="user.png"><input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+                          <img src="user.png"><input type="text" name="uname" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
                       </div>
                       <div class="inp">
-                          <img src="password.png"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+                          <img src="password.png"><input type="password" name="pass" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
                       </div>
                       <input type="checkbox" class="check-box">Remember Password
                       <button type="submit" class="submit-btn">Log In</button>
@@ -83,13 +92,13 @@
                   </div>
                   
                   <!-- Registration Form -->
-                  <form id="register" class="input-group">
+                  <form id="register" class="input-group" onsubmit="callMe()" action="RegisterServlet" method="post">
       
-                      <input type="text" class="input-field" placeholder="Full Name" required="required">
-                      <input type="email" class="input-field" placeholder="Email Address" required="required">
-                      <input type="phone" class="input-field" placeholder="Phone No." required="required">
-                      <input type="password" class="input-field" placeholder="Create Password" name="psame" required="required">
-                      <input type="password" class="input-field" placeholder="Confirm Password" name="psame" required="required">
+                      <input type="text" class="input-field" id="uname" name="uname" placeholder="Full Name" required="required">
+                      <input type="email" class="input-field" id="email" name="email" placeholder="Email Address" required="required">
+                      <input type="phone" class="input-field" id="phone" name="phone" placeholder="Phone No." required="required">
+                      <input type="password" class="input-field" id="pass" name="pass" placeholder="Create Password" name="psame" required="required">
+                      <input type="password" class="input-field" id="confirm" placeholder="Confirm Password" name="psame" required="required">
       
                       
                       <input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
@@ -110,13 +119,12 @@
 				<p class="footer-links">
 					<a href="index.html">Home</a>
 					|
-					<a href="About.html">About Us</a>
+					<a href="#">About Us</a>
 					|
-					<a href="Courses.html">Courses</a>
+				    <a href="Courses.html">Courses</a>
 					|
-					<a href="contact.html">Contact</a>
+					<a href="#">Contact</a>
 				</p>
-
 
 				<p class="footer-company-name">© 2021 LTech Learning Solutions Pvt. Ltd.</p>
 			</div>
@@ -142,7 +150,13 @@
 				<p class="footer-company-about">
 					<span>About the classes</span>
 					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
-				
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
 			</div>
 		</footer>
     <script>
