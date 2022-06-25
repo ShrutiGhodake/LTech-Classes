@@ -54,6 +54,14 @@
 			alert("Invalid username");
 		}
 	}
+	   function myFunction() {
+  		var x = document.getElementById("myInput");
+  		if (x.type === "password") {
+    		x.type = "text";
+  		} else {
+    		x.type = "password";
+  		}
+	}
         </script>
       </head>
       <body>
@@ -77,6 +85,8 @@
                       <div class="inp">
                           <img src="password.png"><input type="password" name="pass" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
                       </div>
+			  <!-- An element to toggle between password visibility -->
+			<input type="checkbox" onclick="myFunction()">Show Password
                       <input type="checkbox" class="check-box">Remember Password
                       <button type="submit" class="submit-btn">Log In</button>
                   </form>
