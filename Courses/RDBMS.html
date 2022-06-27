@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RDBMS</title>
+      <link rel="stylesheet" href="Python.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            LTech Classes
+         </div>
+         <div class="nav-items">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a class="active" href="Courses.html">Courses</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="LoginRegister.html">Login</a></li>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+    </nav><br><br>
+    <div class="card">
+      <img src="course-6.svg" alt="Avatar" style="width:100%; height: 300px">
+          <br><br>
+
+           <button id="btn3">Enroll</button>
+           
+  </div>
+      
+    <div class="title">
+       <b>Learn RDBMS</b><br>
+        <span>Master in RDBMS Database...</span>
+        <div class="info">
+            <table cellpadding="0" cellspacing="0" width="50%">
+                 <tr>
+                      <td><img src="nikita.png" /><td>
+                      <td>Created by<br/>Siddhi Gathe</td>
+                      <td>Category<br/>Coding</td>
+                       <td>Reviews<br/> <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>
+                 </tr>                 
+            </table>
+          <br>
+            <ul class="nav1">
+             <li><a href="#Curr">Curriculum</a></li>
+             <li><a href="#ment">Mentor</a></li>
+             <li><a href="#Rev">Review</a></li>
+            </ul>
+            <br>
+         
+            <div class="container">
+            <div id="tit">Curriculum</div><center>
+            <div id="Curr">
+             <div id="div1" >Introduction<span>3  <i class="fa fa-play-circle" style="font-size:24px"></i> &emsp; 20  <i class="fa fa-eye" style="font-size:24px"></i>&emsp; 10 <i class="fa fa-thumbs-up" style="font-size:24px"></i></span></div>  
+             <div id="div2">Fundamentals of DB system<span>3  <i class="fa fa-play-circle" style="font-size:24px"></i> &emsp; 20  <i class="fa fa-eye" style="font-size:24px"></i>&emsp; 10 <i class="fa fa-thumbs-up" style="font-size:24px"></i></div>  
+             <div id="div3" class="div">3 Schema Architecture <span>3  <i class="fa fa-play-circle" style="font-size:24px"></i> &emsp; 20  <i class="fa fa-eye" style="font-size:24px"></i>&emsp; 10 <i class="fa fa-thumbs-up" style="font-size:24px"></i></div>  
+            <div id="div3" class="div">DBMS Architecture <span>3  <i class="fa fa-play-circle" style="font-size:24px"></i> &emsp; 20  <i class="fa fa-eye" style="font-size:24px"></i>&emsp; 10 <i class="fa fa-thumbs-up" style="font-size:24px"></i></div>  
+            <div id="div3" class="div">Concept of Relation ER <span>3  <i class="fa fa-play-circle" style="font-size:24px"></i> &emsp; 20  <i class="fa fa-eye" style="font-size:24px"></i>&emsp; 10 <i class="fa fa-thumbs-up" style="font-size:24px"></i></div>  
+            </center>
+            </div><hr><br>
+          
+            <div id="hi" style="color:#002366">Mentor</div>
+            
+                 <div id="ment" >
+                    <center><img src="nikita.png" alt="Apoorva Holkar" id="img1"></center>
+                <div id="tea"><p>RDBMS stands for Relational DataBase Management Systems. It is basically a program that allows us to create, delete, and update a relational database. Relational Database is a database system that stores and retrieves data in a tabular format organized in the form of rows and columns. It is a smaller subset of DBMS which was designed by E.F Codd in the 1970s. The major DBMS like SQL, My-SQL, ORACLE are all based on the principles of relational DBMS. 
+
+                    Relational DBMS owes its foundation to the fact that the values of each table are related to others. It has the capability to handle larger magnitudes of data and simulate queries easily. 
+
+                    Relational Database Management Systems maintains data integrity by simulating the following features: 
+                    
+                   1) Entity Integrity: No two records of the database table can be completely duplicate.
+                    2)Referential Integrity: Only the rows of those tables can be deleted which are not used by other tables. Otherwise, it may lead to data inconsistency.
+                    3)User-defined Integrity: Rules defined by the users based on confidentiality and access.
+                   4) Domain integrity: The columns of the database tables are enclosed within some structured limits, based on default values, type of data or ranges.
+                     </p>
+            </div>
+           </div><br><hr><br>
+        
+      
+
+         <div id="hi" style="color:#002366">Reviews</div>
+         <div id="Rev"><br>
+                
+                   
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+          <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+          
+          <script>
+          var xValues = ["Teaching", "Content", "Assignment", "Problem Solving"];
+          var yValues = [90, 89, 95, 81];
+          var barColors = ["red", "green","blue","orange"];
+          
+          new Chart("myChart", {
+            type: "horizontalBar",
+            data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+            options: {
+              legend: {display: false},
+              scales: {
+                xAxes: [{ticks: {min: 10, max:100}}]
+              }
+            }
+          });
+          </script>
+          
+ 
+             </div>
+             </div></div></div>
+ 
+
+            <footer class="footer-distributed">
+
+			<div class="footer-left">
+          
+				<div class="logo1">
+                    LTech Classes
+                </div>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					|
+					<a href="About.html">About Us</a>
+					|
+					<a href="Courses.html">Courses</a>
+					|
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2021 LTech Learning Solutions Pvt. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						Mahape, Navi Mumbai - 400710</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="index.html">support@ltechclasses.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the classes</span>
+					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/signup"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+    <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         
+
+        
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           cancelBtn.classList.add("show");
+         }
+
+      </script>
+</body>
+</html>
